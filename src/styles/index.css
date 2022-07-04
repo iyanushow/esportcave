@@ -1,0 +1,63 @@
+@import url("./font.css");
+
+:root {
+  --white: #fff;
+  --grey: #a9a9a9;
+  --yellow: #f2bb1f;
+  --black: #0f0e0e;
+  --primaryBg: #1d1d1d;
+  --primaryColor: #ffb400;
+  --linearDefault: linear-gradient(268.4deg, #ffb400 0.49%, #fe8833 44.45%, #fd556f 96.2%);
+  --linearSec: linear-gradient(268.4deg, #fd556f 96.2%, #fe8833 44.45%, #ffb400 0.49%);
+}
+
+/* css resets */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  height: -webkit-fill-available;
+  font-family: '"Gilroy","Roboto", Helvetica, Arial, sans-serif';
+  font-weight: 400;
+  color: var(--white);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+figure {
+  margin: 0;
+}
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+}
