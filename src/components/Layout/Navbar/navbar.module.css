@@ -1,0 +1,40 @@
+.container {
+  background-color: var(--black);
+  padding: 5px 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 5px 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 5px 40px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navList {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .navList {
+    display: flex;
+    margin-right: 5%;
+    margin-left: auto;
+    gap: 20px;
+  }
+
+  .navLink {
+    font-size: clamp(0.875rem, 0.4216rem + 0.7085vw, 1.75rem);
+    padding: 14px 26px;
+  }
+}

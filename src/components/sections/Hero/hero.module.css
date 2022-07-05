@@ -1,0 +1,126 @@
+.hero {
+  background-image: url("/public/bgPattern.png");
+  width: 100%;
+  height: 100%;
+
+  padding: 40px 15px;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.mainContent {
+  width: 90%;
+  max-width: 450px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainContent h1 {
+  color: var(--yellow);
+
+  font-size: clamp(0.875rem, 0.1607rem + 1.1161vw, 1.5rem);
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mainContent h2 {
+  font-size: clamp(1.5rem, 0.8813rem + 2.9114vw, 4.375rem);
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.mainContent p {
+  font-size: clamp(0.875rem, 0.6807rem + 0.3036vw, 1.25rem);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.stores {
+  margin-top: 32px;
+  display: flex;
+  gap: 8px;
+}
+
+.stores a {
+  transition: all 0.3s ease-in-out;
+}
+.stores a:hover {
+  transform: scale(1.04);
+}
+.stores img {
+  border-radius: 4px;
+}
+
+.mainImage {
+  max-width: 228px;
+  margin: 10px auto;
+}
+.mainImage img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.954;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 40px 24px;
+  }
+
+  .stores {
+    margin-top: 40px;
+    gap: 16px;
+  }
+
+  .mainImage {
+    max-width: 32vw;
+    margin: 0 auto;
+  }
+
+  .mainContent {
+    max-width: 58vw;
+  }
+
+  .mainContent p {
+    max-width: 85%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 40px 60px;
+  }
+
+  .mainContent {
+    max-width: 50vw;
+  }
+
+  .mainImage {
+    max-width: 35vw;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero {
+    padding: 40px 80px;
+  }
+  .stores {
+    margin-top: 56px;
+  }
+
+  .mainImage {
+    max-width: 684.8px;
+  }
+
+  .mainContent {
+    width: 90%;
+    max-width: 735px;
+  }
+}

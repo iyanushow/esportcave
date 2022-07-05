@@ -1,0 +1,85 @@
+.gameCard {
+  padding: 20px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 345px;
+  height: 378px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.live {
+  background: linear-gradient(var(--primaryBg), var(--primaryBg)) padding-box,
+    var(--linearPurple) border-box;
+  border: 1px solid transparent;
+}
+
+.notLive {
+  background: linear-gradient(var(--primaryBg), var(--primaryBg)) padding-box,
+    var(--linearYellow) border-box;
+  border: 1px solid transparent;
+
+  /* background-color: white; */
+}
+
+.overlay_live {
+  overflow: hidden;
+  height: 0;
+}
+
+.overlay_notLive {
+  backdrop-filter: blur(20px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(98, 98, 98, 0.7);
+
+  display: flex;
+  font-size: clamp(1rem, 0.8386rem + 0.7595vw, 1.75rem);
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.cardTitle {
+  font-size: clamp(1rem, 0.8386rem + 0.7595vw, 1.75rem);
+}
+
+.cardBtn {
+  width: 100%;
+  padding: 16px 10px;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.cardBtn:hover {
+  background-color: var(--yellow);
+}
+
+.cardImage {
+  width: 100%;
+}
+.cardImage img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .gameCard {
+    max-width: 318px;
+    height: 355px;
+  }
+}
+@media (min-width: 1920px) {
+  .gameCard {
+    max-width: 540px;
+    height: 600px;
+  }
+}
