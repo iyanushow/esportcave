@@ -6,6 +6,7 @@ import Games from "./components/sections/Games/Games";
 //styles
 import "./styles/index.css";
 import styles from "./styles/main.module.css";
+import Contact from "./components/sections/Contact/Contact";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className={styles.container}>
         <Earn />
         <Games />
+        <Contact />
       </div>
     </Layout>
   );
