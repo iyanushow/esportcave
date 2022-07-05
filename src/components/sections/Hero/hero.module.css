@@ -70,7 +70,7 @@
 
 @media (min-width: 768px) {
   .hero {
-    padding: 40px 24px;
+    padding: 40px;
   }
 
   .stores {
@@ -80,7 +80,8 @@
 
   .mainImage {
     max-width: 32vw;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: auto;
   }
 
   .mainContent {
@@ -94,7 +95,7 @@
 
 @media (min-width: 1024px) {
   .hero {
-    padding: 40px 60px;
+    padding: 40px 6vw;
   }
 
   .mainContent {
@@ -103,7 +104,6 @@
 
   .mainImage {
     max-width: 35vw;
-    margin: 0 auto;
   }
 }
 

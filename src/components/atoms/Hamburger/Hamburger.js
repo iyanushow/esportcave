@@ -5,7 +5,7 @@ const Hamburger = ({ isOpen, openNav }) => {
   return (
     <div
       href="#"
-      class={`${styles.hamburger} ${isOpen ? styles.isOpen : undefined}`}
+      className={`${styles.hamburger} ${isOpen ? styles.isOpen : undefined}`}
       onClick={openNav}
     >
       <span></span>
