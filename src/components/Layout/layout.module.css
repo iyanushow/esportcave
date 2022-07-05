@@ -1,0 +1,6 @@
+.layout {
+  background: var(--primaryBg);
+  color: var(--white);
+  width: 100%;
+  height: -webkit-fill-available;
+}
