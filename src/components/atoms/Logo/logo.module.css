@@ -1,8 +1,9 @@
 .logo {
   display: flex;
-  flex-wrap: wrap;
-  width: 70.5px;
+  flex-direction: column;
+  min-width: 70.5px;
   justify-content: center;
+  align-items: center;
 }
 
 .logoText {
@@ -22,6 +23,6 @@
   }
 
   .logo {
-    width: 95px;
+    min-width: 95px;
   }
 }

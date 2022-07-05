@@ -9,9 +9,9 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .container {
-    padding: 5px 40px;
+    padding: 5px 6vw;
   }
 }
 
