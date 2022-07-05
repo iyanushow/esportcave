@@ -18,10 +18,12 @@ const Contact = () => {
 
           <form className={styles.form} onSubmit={submitForm}>
             <label>Enter Your Mobile Number</label>
-            <input placeholder="+234" value={number} onChange={e => setNumber(e.target.value)} />
-            <button type="submit" className={styles.playBtn}>
-              Send App Link
-            </button>
+            <div className={styles.inputBox}>
+              <input placeholder="+234" value={number} onChange={e => setNumber(e.target.value)} />
+              <button type="submit" className={styles.playBtn}>
+                Send App Link
+              </button>
+            </div>
           </form>
         </div>
 

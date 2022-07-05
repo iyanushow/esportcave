@@ -2,6 +2,7 @@
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
+  padding: 60px 0;
 }
 
 .container {
@@ -9,7 +10,7 @@
     var(--linearBorder) border-box;
   border-radius: 5px;
   border: 1px solid transparent;
-  padding: 20px 16px;
+  padding: 32px 16px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -41,7 +42,7 @@
 }
 
 .content {
-  margin: 16px auto 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   row-gap: 16px;
@@ -66,7 +67,7 @@
   border: 1px solid #333333;
   background: transparent;
   border-radius: 4px;
-  padding: 12px;
+  padding: 14px 12px;
   margin: 10px auto;
   font-size: 14px;
   color: var(--white);
@@ -80,7 +81,6 @@
     linear-gradient(rgba(253, 85, 111, 1) 100%, rgba(0, 0, 0, 0)) border-box;
   border-radius: 4px;
   border: 1px solid transparent;
-  min-width: 188px;
   transition: all 0.3s ease-in-out;
   align-self: center;
 }
@@ -91,21 +91,38 @@
 
 @media (min-width: 768px) {
   .container {
-    display: flex;
+    align-items: center;
     justify-content: space-between;
   }
-  .image {
-    order: 2;
-    width: 25%;
-  }
+
   .content {
     width: 65%;
     justify-content: unset;
     text-align: left;
-    margin: 16px 0 0 20px;
   }
 
+  .inputBox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .inputBox input {
+    width: 68%;
+    margin: 10px 0 0;
+  }
+  .playBtn {
+    width: 30%;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
   .section {
-    width: 80%;
+    width: 90%;
+    padding: 120px 0;
+  }
+
+  .content {
+    width: 55%;
   }
 }
