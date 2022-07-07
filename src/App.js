@@ -14,8 +14,8 @@ function App() {
       <Hero />
       <div className={styles.container}>
         <Earn />
-        {/* <Games />
-        <Contact /> */}
+        <Games />
+        <Contact />
       </div>
     </Layout>
   );
