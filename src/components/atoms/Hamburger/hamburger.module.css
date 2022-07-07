@@ -1,13 +1,13 @@
 .hamburger > span {
   display: block;
-  width: 1.7rem;
-  height: 0.15rem;
+  width: 1.5rem;
+  height: 0.135rem;
   border-radius: 20px;
   background-color: var(--white);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transform-origin: 6px 1px;
-  transform-origin: 6px 1px;
+  transform-origin: 5px 1px;
 }
 
 .hamburger > span:not(:last-child) {

@@ -8,18 +8,30 @@
 
 .logoText {
   color: var(--yellow);
-  font-size: clamp(0.5rem, 0.3806rem + 0.597vw, 1.5rem);
+  font-size: clamp(0.375rem, 0.2536rem + 0.5178vw, 0.875rem);
 }
 
 .logoImage {
-  width: 36px;
-  height: 36px;
+  width: 37.8px;
+  height: 34.61px;
+  aspect-ratio: 1.09;
 }
 
 @media (min-width: 768px) {
   .logoImage {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 57px;
+  }
+
+  .logo {
+    min-width: 95px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .logoImage {
+    width: 95px;
+    height: 87px;
   }
 
   .logo {
