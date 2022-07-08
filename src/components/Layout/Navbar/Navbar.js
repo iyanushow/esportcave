@@ -17,7 +17,7 @@ const Navbar = () => {
         <ul className={styles.navList}>
           <li className={styles.navLink}>Home</li>
           <li className={styles.navLink}>About Us</li>
-          <li className={styles.navLink}>Contact</li>
+          <li className={`${styles.navLink} ${styles.active}`}>Contact</li>
         </ul>
 
         <Hamburger isOpen={isOpen} openNav={() => setIsOpen(prev => !prev)} />

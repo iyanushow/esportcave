@@ -1,23 +1,23 @@
 .gamesSection {
-  margin: 40px 0;
+  margin: 42px 0;
 }
 .gameContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin: 40px auto;
+  margin: 32px auto;
 }
 .heading {
   max-width: 520px;
   margin: 0 auto;
 }
 .heading h2 {
-  font-size: clamp(2.125rem, 1.9367rem + 0.8861vw, 3rem);
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 29px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 
   background-color: var(--yellow);
   background-image: linear-gradient(
@@ -34,6 +34,25 @@
   -moz-text-fill-color: transparent;
 }
 .heading p {
-  font-size: clamp(0.875rem, 0.8212rem + 0.2532vw, 1.125rem);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .gameContainer {
+    margin: 40px auto;
+  }
+}
+@media (min-width: 1920px) {
+  .heading h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .heading p {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
