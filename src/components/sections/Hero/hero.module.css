@@ -167,7 +167,8 @@
   }
 
   .mainImage {
-    width: 587px;
-    height: 843px;
+    width: 684.8px;
+    height: 717.68px;
+    max-width: 684.8px;
   }
 }
