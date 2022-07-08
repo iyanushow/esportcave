@@ -28,9 +28,11 @@ const Contact = () => {
         </div>
 
         <div className={styles.imageBox}>
-          <figure className={styles.image}>
-            <img src="qr-code.png" alt="phones" />
-          </figure>
+          <div className={styles.imgContainer}>
+            <figure className={styles.image}>
+              <img src="qr-code.png" alt="phones" />
+            </figure>
+          </div>
           <p>OR Scan QR Code</p>
         </div>
       </div>
