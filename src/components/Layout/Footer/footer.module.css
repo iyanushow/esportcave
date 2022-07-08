@@ -149,7 +149,7 @@ d {
   }
 }
 
-@media (min-width: 1920) {
+@media (min-width: 1920px) {
   .container {
     padding: 46px 130px;
   }
@@ -174,5 +174,10 @@ d {
 
   .footerContent {
     padding: 0 130px;
+  }
+
+  .footer {
+    max-width: 1920px;
+    margin: 0 auto;
   }
 }
