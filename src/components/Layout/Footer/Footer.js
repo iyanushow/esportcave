@@ -6,7 +6,7 @@ import styles from "./footer.module.css";
 
 const Footer = () => {
   return (
-    <div className={styles.container}>
+    <footer className={styles.container}>
       <div className={styles.footer}>
         <Logo className={styles.logo} />
 
@@ -50,7 +50,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

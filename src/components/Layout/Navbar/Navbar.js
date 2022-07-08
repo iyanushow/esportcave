@@ -10,8 +10,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={styles.container}>
-      <nav className={styles.nav}>
+    <nav className={styles.container}>
+      <div className={styles.nav}>
         <Logo />
 
         <ul className={styles.navList}>
@@ -21,8 +21,8 @@ const Navbar = () => {
         </ul>
 
         <Hamburger isOpen={isOpen} openNav={() => setIsOpen(prev => !prev)} />
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 

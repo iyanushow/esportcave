@@ -2,12 +2,18 @@
   --color-stop: rgba(255, 180, 0, 1);
 }
 
+.container {
+  background-color: #0f0e0e;
+  color: var(--white);
+  padding: 32px 18px 32px 19px;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 32px;
   margin: 0 auto;
 }
 
@@ -18,36 +24,46 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  row-gap: 30px;
+  row-gap: 32px;
 
   margin: 20px 0;
 }
 
-.container {
-  background-color: #0f0e0e;
-  color: var(--white);
-  padding: 40px 15px;
+.footerLinks h2 {
+  margin-bottom: 26px;
 }
 
 .footerLinks h2,
 .legal h3 {
-  font-size: clamp(0.75rem, 0.7052rem + 0.2239vw, 1.125rem);
   font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
 }
 
-.legal p,
-.footerLinks li {
-  font-size: clamp(0.625rem, 0.5951rem + 0.1493vw, 0.875rem);
+.legal p {
   font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  margin-bottom: 16px;
 }
-.footerLinks h2 {
-  margin-bottom: 20px;
+
+.legal h3 {
+  margin-bottom: 16px;
+}
+.footerLinks li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #a9a9a9;
 }
 
 .footerLinks ul {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   justify-content: space-between;
 }
 
@@ -79,9 +95,24 @@ d {
   }
 
   .container {
-    background-color: #0f0e0e;
-    color: var(--white);
-    padding: 40px;
+    padding: 40px 44px;
+  }
+
+  .footerLinks h2,
+  .footerLinks li {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .legal p {
+    margin-bottom: 24px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .legal h3 {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 17px;
   }
 }
 
@@ -115,5 +146,33 @@ d {
     background-color: #0f0e0e;
     color: var(--white);
     padding: 40px 6vw;
+  }
+}
+
+@media (min-width: 1920) {
+  .container {
+    padding: 46px 130px;
+  }
+
+  .footerLinks h2,
+  .footerLinks li {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .legal p {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 60px;
+  }
+
+  .legal h3 {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .footerContent {
+    padding: 0 130px;
   }
 }
