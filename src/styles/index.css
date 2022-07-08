@@ -1,4 +1,4 @@
-@import url("./font.css");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&display=swap");
 
 :root {
   --white: #fff;
@@ -24,7 +24,7 @@ body {
   height: -moz-available; /* WebKit-based browsers will ignore this. */
   height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
   height: fill-available;
-  font-family: "Gilroy", "Arial", "Helvetica", "sans-serif";
+  font-family: "League Spartan", sans-serif;
   font-weight: 400;
   color: var(--white);
 }

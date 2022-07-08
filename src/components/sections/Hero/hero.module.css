@@ -4,13 +4,13 @@
   height: 100%;
 
   padding: 38px 19px 38px 15px;
-
+}
+.heroContainer {
   display: flex;
   justify-content: center;
   gap: 21px;
   flex-wrap: wrap;
 }
-
 .mainContent {
   max-width: 400px;
 }
@@ -73,6 +73,8 @@
 @media (min-width: 768px) {
   .hero {
     padding: 54px 44px 73px 44px;
+  }
+  .heroContainer {
     gap: 26px;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -134,6 +136,10 @@
 }
 
 @media (min-width: 1920px) {
+  .heroContainer {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
   .mainContent {
     max-width: 694px;
     margin-right: auto;
@@ -161,7 +167,8 @@
   }
 
   .mainImage {
-    width: 587px;
-    height: 843px;
+    max-width: 684.8px;
+    width: 684.8px;
+    height: 717.68px;
   }
 }
