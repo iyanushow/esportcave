@@ -6,10 +6,10 @@ import styles from "./logo.module.css";
 
 const Logo = ({ className }) => {
   return (
-    <div className={`${styles.logo} ${className}`}>
+    <a href="/" className={`${styles.logo} ${className}`}>
       <Elogo className={styles.logoImage} />
       <p className={styles.logoText}>Play..Earn..Socialize</p>
-    </div>
+    </a>
   );
 };
 
