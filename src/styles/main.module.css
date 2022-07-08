@@ -1,18 +1,15 @@
 .container {
-  padding: 40px 15px;
   padding: 42px 19px 38px 15px;
 }
 
 @media (min-width: 768px) {
   .container {
-    padding: 80px 40px;
     padding: 54px 44px 73px 44px;
   }
 }
 
 @media (min-width: 1024px) {
   .container {
-    padding: 100px 6vw;
     padding: 72px 130px 72px 130px;
 
     max-width: 1920px;
