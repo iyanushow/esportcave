@@ -118,10 +118,12 @@ imgContainer {
     flex-direction: row;
 
     gap: 47px;
+    width: 100%;
+    max-width: 656px;
   }
 
   .content {
-    width: 65%;
+    width: 428px;
     justify-content: unset;
     text-align: left;
     row-gap: unset;
@@ -143,22 +145,23 @@ imgContainer {
     justify-content: space-between;
   }
 
+  .imageBox {
+    max-width: 133px;
+  }
+
   .inputBox input {
-    width: 68%;
+    width: 280px;
     margin: 10px 0 0;
   }
   .playBtn {
-    width: 30%;
+    width: 140px;
     margin-top: 10px;
     padding: 14px 0px;
+    min-width: 118px;
   }
 }
 
 @media (min-width: 1024px) {
-  .content {
-    width: 55%;
-  }
-
   .container {
     margin: 0 auto;
   }
@@ -166,6 +169,7 @@ imgContainer {
 @media (min-width: 1920px) {
   .container {
     gap: 197px;
+    max-width: 1112px;
   }
 
   .section {
@@ -173,6 +177,22 @@ imgContainer {
   }
 
   .content {
-    max-width: 638px;
+    width: 638px;
+  }
+
+  .playBtn {
+    width: 174px;
+    margin-top: 10px;
+    padding: 14px 0px;
+    min-width: 118px;
+  }
+
+  .inputBox input {
+    width: 453px;
+    margin: 10px 0 0;
+  }
+
+  .imageBox {
+    max-width: 174px;
   }
 }
