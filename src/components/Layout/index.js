@@ -10,9 +10,9 @@ import styles from "./layout.module.css";
 const Layout = ({ children }) => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <main className={styles.layout}>{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
