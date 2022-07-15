@@ -1,33 +1,32 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 
 import Logo from "../../components/atoms/Logo/Logo";
 import Hamburger from "../../components/atoms/Hamburger/Hamburger";
 
 //styles
 import styles from "./navbar.module.css";
-import { useRef } from "react/cjs/react.production.min";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  // const navRef = useRef(null);
+  const navRef = useRef(null);
 
-  // const callback = () => {};
+  const callback = () => {};
 
-  // useEffect(() => {
-  //   if (typeof IntersectionObserver === "undefined") {
-  //     return;
-  //   }
-  //   const current = navRef?.current;
-  //   const observer = new IntersectionObserver(callback, {});
-  //   if (current) {
-  //     observer.observe(current);
-  //   }
-  //   return () => {
-  //     if (current) {
-  //       observer.unobserve(current);
-  //     }
-  //   };
-  // }, []);
+  useEffect(() => {
+    if (typeof IntersectionObserver === "undefined") {
+      return;
+    }
+    const current = navRef?.current;
+    const observer = new IntersectionObserver(callback, {});
+    if (current) {
+      observer.observe(current);
+    }
+    return () => {
+      if (current) {
+        observer.unobserve(current);
+      }
+    };
+  }, []);
 
   return (
     <nav className={styles.container} ref={navRef}>
