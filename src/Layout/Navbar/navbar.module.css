@@ -24,6 +24,13 @@
   margin: 0 auto;
 }
 
+.sticky {
+  border-bottom: 1px solid var(--yellow);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
 .navList {
   display: none;
 }

@@ -4,7 +4,7 @@ import styles from "./earn.module.css";
 
 const Earn = () => {
   return (
-    <section className={styles.earnSection}>
+    <section className={styles.earnSection} id="earn">
       <div className={styles.earnContainer}>
         <figure className={styles.earnImage}>
           <Image src="/phones.png" alt="phones" width={405} height={520} />

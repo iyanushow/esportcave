@@ -8,28 +8,27 @@ import styles from "./navbar.module.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [stickToTop, setStickToTop] = useState(false);
+
   const navRef = useRef(null);
 
-  const callback = () => {};
-
   useEffect(() => {
-    if (typeof IntersectionObserver === "undefined") {
-      return;
-    }
-    const current = navRef?.current;
-    const observer = new IntersectionObserver(callback, {});
-    if (current) {
-      observer.observe(current);
-    }
-    return () => {
-      if (current) {
-        observer.unobserve(current);
+    const handleScroll = e => {
+      if (window.scrollY >= navRef.current.clientHeight) {
+        setStickToTop(true);
+      } else {
+        setStickToTop(false);
       }
+    };
+
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <nav className={styles.container} ref={navRef}>
+    <nav className={`${styles.container} ${stickToTop ? styles.sticky : undefined}`} ref={navRef}>
       <div className={styles.nav}>
         <Logo />
 
