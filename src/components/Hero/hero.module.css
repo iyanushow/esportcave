@@ -1,0 +1,185 @@
+.hero {
+  background-image: url("/bgPattern.png");
+  width: 100%;
+  height: 100%;
+
+  padding: 38px 19px 38px 15px;
+}
+.heroContainer {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+  flex-wrap: wrap;
+}
+.mainContent {
+  max-width: 400px;
+}
+
+.mainContent h1 {
+  color: var(--yellow);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.mainContent h2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+
+  margin: 6px 0;
+  max-width: 90%;
+}
+
+.mainContent p {
+  font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);
+  font-weight: 500;
+  line-height: 1.57;
+
+  margin-bottom: 32px;
+}
+
+.stores {
+  margin-top: 32px;
+  display: flex;
+  gap: 8px;
+}
+
+.storesImg {
+  width: 97px;
+  height: 28px;
+}
+
+.storesImg img {
+  aspect-ratio: 3.464 !important;
+  border-radius: 4px !important;
+}
+
+.stores a {
+  transition: all 0.3s ease-in-out;
+}
+.stores a:hover {
+  transform: scale(1.04);
+}
+
+.mainImage {
+  position: relative;
+  width: 228.39px;
+  /* height: 217.93px; */
+  height: 328px;
+  margin: 0 auto;
+}
+
+.mainImage img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 0.954;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 54px 44px 73px 44px;
+  }
+  .heroContainer {
+    gap: 26px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .mainContent {
+    max-width: 50vw;
+  }
+
+  .mainContent h2 {
+    margin: 6px 0 16px;
+
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .mainContent p {
+    font-weight: 500;
+    line-height: 1.625;
+    margin-bottom: 40px;
+  }
+
+  .stores {
+    gap: 16px;
+  }
+
+  .storesImg {
+    width: 113px;
+    height: 32px;
+  }
+
+  .mainImage {
+    width: 250px;
+    height: 359px;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 72px 130px 72px 130px;
+  }
+
+  .contentContainer {
+    width: 50vw;
+  }
+
+  .mainContent {
+    max-width: 86%;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1920px) {
+  .heroContainer {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  .mainContent {
+    max-width: 694px;
+    margin-right: auto;
+  }
+
+  .mainContent h1 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .mainContent h2 {
+    margin: 6px 0 12px;
+    max-width: unset;
+
+    font-size: 70px;
+    line-height: 98px;
+  }
+
+  .mainContent p {
+    font-weight: 400;
+    line-height: 2.1;
+    margin-bottom: 56px;
+  }
+
+  .stores {
+    gap: 16px;
+  }
+
+  .storesImg {
+    width: 174px;
+    height: 50px;
+  }
+
+  .mainImage {
+    max-width: 684.8px;
+    width: 684.8px;
+    height: 717.68px;
+  }
+}
