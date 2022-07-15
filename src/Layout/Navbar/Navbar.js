@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <nav className={`${styles.container} ${stickToTop ? styles.sticky : undefined}`} ref={navRef}>
       <div className={styles.nav}>
-        <Logo />
+        <Logo className={styles.navLogo} />
 
         <ul className={styles.navList}>
           <li className={styles.navLink}>Home</li>

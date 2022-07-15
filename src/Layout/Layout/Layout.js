@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
 
       <Navbar />
       <main className={styles.layout}>{children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
