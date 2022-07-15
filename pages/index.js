@@ -4,15 +4,15 @@ import Hero from "../src/components/Hero/Hero";
 import Contact from "../src/components/Contact/Contact";
 import { games } from "../src/utils/data";
 
-export const getStaticProps = () => {
-  return {
-    props: {
-      games,
-    },
-  };
-};
+// export const getStaticProps = () => {
+//   return {
+//     props: {
+//       games,
+//     },
+//   };
+// };
 
-export default function Home({ games }) {
+export default function Home() {
   return (
     <>
       <Hero />
