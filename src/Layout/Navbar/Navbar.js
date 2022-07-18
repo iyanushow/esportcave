@@ -5,6 +5,7 @@ import Hamburger from "../../components/atoms/Hamburger/Hamburger";
 
 //styles
 import styles from "./navbar.module.css";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,9 +34,22 @@ const Navbar = () => {
         <Logo className={styles.navLogo} />
 
         <ul className={styles.navList}>
-          <li className={styles.navLink}>Home</li>
-          <li className={styles.navLink}>About Us</li>
-          <li className={`${styles.navLink} ${styles.active}`}>Contact</li>
+          <li className={styles.navLink}>
+            <Link href={"/"}>
+              <a>Home</a>
+            </Link>
+          </li>
+
+          <li className={styles.navLink}>
+            <Link href={"/"}>
+              <a>About Us</a>
+            </Link>
+          </li>
+          <li className={`${styles.navLink} ${styles.active}`}>
+            <Link href={"/#contact"}>
+              <a>Contact</a>
+            </Link>
+          </li>
         </ul>
 
         <Hamburger isOpen={isOpen} openNav={() => setIsOpen(prev => !prev)} />

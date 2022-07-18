@@ -24,8 +24,8 @@
   margin: 0 auto;
 }
 
-.navLogo figure {
-  align-self: center;
+.navLogo {
+  align-items: center;
 }
 
 .sticky {
@@ -37,6 +37,14 @@
 
 .navList {
   display: none;
+}
+
+.navLink {
+  transition: all 0.4s ease-in-out;
+}
+.navLink:hover {
+  border-radius: 4px;
+  border: 0.5px solid var(--yellow);
 }
 
 @media (min-width: 1024px) {
