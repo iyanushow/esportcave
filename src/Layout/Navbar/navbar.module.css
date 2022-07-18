@@ -56,7 +56,7 @@
     display: flex;
     margin-right: 5%;
     margin-left: auto;
-    gap: 72px;
+    gap: 39px;
   }
 
   .navLink {
@@ -78,9 +78,20 @@
   .container {
     padding: 20px 7.5vw;
   }
+
+  .navList {
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+    gap: 39px;
+  }
 }
 @media (min-width: 1920px) {
   .container {
     padding: 11px 130px 11px 130px;
+  }
+
+  .navList {
+    gap: 51px;
   }
 }

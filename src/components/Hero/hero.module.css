@@ -117,15 +117,6 @@
     max-width: 60%;
   }
 
-  .mainImage {
-    width: 300px;
-    height: 314.47px;
-  }
-
-  /* .mainContent {
-    max-width: 50vw;
-  } */
-
   .mainContent h1 {
     font-size: clamp(0.875rem, 0.5rem + 0.7813vw, 1rem);
   }
@@ -153,8 +144,9 @@
   }
 
   .mainImage {
-    width: 80%;
-    /* height: 359px; */
+    width: 300px;
+    height: 314.47px;
+    margin: unset;
     margin-left: auto;
     max-width: 450px;
     display: flex;
@@ -194,7 +186,7 @@
 
 @media (min-width: 1440px) {
   .hero {
-    padding: 72px 7.5vw;
+    padding: 20px 7.5vw;
     min-height: calc(100vh - 109px);
   }
 
