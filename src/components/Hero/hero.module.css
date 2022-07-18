@@ -22,7 +22,7 @@
   color: var(--yellow);
   font-weight: 600;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 16px;
 }
 
 .mainContent h2 {
@@ -35,7 +35,8 @@
 }
 
 .mainContent p {
-  font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);
+  font-size: 14px;
+  line-height: 22px;
   font-weight: 500;
   line-height: 1.57;
 
@@ -71,16 +72,15 @@
 
 .mainImage {
   position: relative;
-  width: 228.39px;
-  /* height: 217.93px; */
-  height: 328px;
+  width: 282.34px;
+  height: 295.89px;
   margin: 0 auto;
 }
 
 .mainImage img {
   width: 100%;
   height: auto;
-  aspect-ratio: 0.696;
+  aspect-ratio: 0.954;
 }
 
 /* relative media queries */
@@ -94,6 +94,9 @@
 @media (min-width: 520px) {
   .heroContainer {
     flex-wrap: unset;
+  }
+  .mainContent p {
+    font-size: clamp(0.875rem, 0.8143rem + 0.2589vw, 1.125rem);
   }
 }
 
@@ -110,10 +113,13 @@
   }
 
   .contentContainer {
-    flex-basis: 60%;
+    width: 100%;
+    max-width: 60%;
   }
+
   .mainImage {
-    flex-basis: 40%;
+    width: 300px;
+    height: 314.47px;
   }
 
   /* .mainContent {
@@ -125,7 +131,7 @@
   }
 
   .mainContent h2 {
-    margin: 16px 0 24px;
+    margin: 6px 0 14px;
 
     font-size: clamp(2.25rem, 0.8333rem + 2.9514vw, 4.375rem);
     line-height: 44px;
@@ -161,9 +167,10 @@
   .hero {
     padding: 72px 5.5vw;
     display: block;
+    min-height: calc(100vh - 91px);
   }
   .heroContainer {
-    padding: 60px 0 30px;
+    padding: 64px 0 58px;
     justify-content: space-between;
   }
   .mainContent {
@@ -172,29 +179,38 @@
   }
 
   .mainContent h2 {
-    margin: 24px 0 32px;
+    margin: 10px 0 18px;
     line-height: 1.1;
+  }
+
+  .contentContainer {
+    flex-basis: 60%;
+  }
+
+  .mainImage {
+    flex-basis: 40%;
   }
 }
 
 @media (min-width: 1440px) {
   .hero {
     padding: 72px 7.5vw;
+    min-height: calc(100vh - 109px);
   }
 
   .mainImage {
     max-width: 100%;
-    flex-basis: 35%;
+    width: 512.21px;
+    height: 528.25px;
+    flex-basis: unset;
   }
 
-  .mainImage img {
-    aspect-ratio: 0.954;
-  }
-
-  .heroContainer {
-    padding: 120px 0 40px;
+  .contentContainer {
+    width: 100%;
+    max-width: 48%;
   }
 }
+
 @media (min-width: 1920px) {
   .hero {
     min-height: calc(100vh - 125px);
@@ -216,7 +232,6 @@
   }
 
   .mainContent h2 {
-    margin: 6px 0 12px;
     max-width: unset;
 
     font-size: 70px;

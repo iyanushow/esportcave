@@ -19,11 +19,11 @@ const Layout = ({ children }) => {
 
     setPageTitle(title.join("-"));
   }, [router.asPath]);
-
+  console.log(pageTitle);
   return (
     <>
       <Head>
-        <title>Esportcave {pageTitle ? `| ${pageTitle}` : undefined}</title>
+        <title>eSportcave {pageTitle ? `| ${pageTitle}` : ""}</title>
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
