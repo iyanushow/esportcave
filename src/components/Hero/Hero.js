@@ -15,9 +15,10 @@ const Hero = () => {
             <h2>How About a Game of Whot?</h2>
 
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing . Morbi vestibulum mi felis. Cras
-              ac erat arcu.Vivamus sagittis augue ut bibendum mollis.Vivamus sagittis augue ut
-              bibendum mollis.
+              A social game of engaging & thrilling battles including 1 on 1 and Tournament
+              adventures, with players from around the world in real-time. (I think this next part
+              can be left out since it’s repeated somewhere below) Stand a chance to win real cash
+              prizes playing games you love!
             </p>
             <div className={styles.stores}>
               <Link className="" href="/">
