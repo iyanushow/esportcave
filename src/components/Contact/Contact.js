@@ -31,7 +31,7 @@ const Contact = () => {
         <div className={styles.imageBox}>
           <div className={styles.imgContainer}>
             <figure className={styles.image}>
-              <Image src="/qr-code.png" alt="phones" width={133} height={126} />
+              <Image src="/images/qr-code.png" alt="phones" width={133} height={126} />
             </figure>
           </div>
           <p>OR Scan QR Code</p>

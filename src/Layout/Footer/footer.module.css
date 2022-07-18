@@ -18,6 +18,12 @@
   padding: 32px 18px 32px 19px;
 }
 
+@media (min-width: 321px) {
+  .container {
+    padding: 32px 5.937vw;
+  }
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -112,7 +118,7 @@
   }
 
   .container {
-    padding: 40px 44px;
+    padding: 40px 5.729vw;
   }
 
   .footerLinks h2,
@@ -179,7 +185,13 @@
   .container {
     background-color: #0f0e0e;
     color: var(--white);
-    padding: 40px 6vw;
+    padding: 40px 5.5vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 43px 7.5vw;
   }
 }
 

@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Esportcave | {pageTitle}</title>
+        <title>Esportcave {pageTitle ? `| ${pageTitle}` : undefined}</title>
         <link rel="icon" href="/favicon.ico" />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />

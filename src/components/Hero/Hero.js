@@ -22,14 +22,28 @@ const Hero = () => {
             </p>
             <div className={styles.stores}>
               <Link className="" href="/">
-                <figure className={styles.storesImg}>
-                  <Image src="/AppStore-Image.jpeg" alt="app-store" width={174} height={50} />
-                </figure>
+                <a target="_blank">
+                  <figure className={styles.storesImg}>
+                    <Image
+                      src="/images/AppStore-Image.jpeg"
+                      alt="app-store"
+                      width={174}
+                      height={50}
+                    />
+                  </figure>
+                </a>
               </Link>
               <Link className="" href="/">
-                <figure className={styles.storesImg}>
-                  <Image src="/G-play-image.jpeg" alt="google-play-store" width={174} height={50} />
-                </figure>
+                <a target="_blank">
+                  <figure className={styles.storesImg}>
+                    <Image
+                      src="/images/G-play-image.jpeg"
+                      alt="google-play-store"
+                      width={174}
+                      height={50}
+                    />
+                  </figure>
+                </a>
               </Link>
             </div>
           </div>
