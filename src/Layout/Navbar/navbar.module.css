@@ -41,10 +41,13 @@
 
 .navLink {
   transition: all 0.4s ease-in-out;
+  border: 1px solid transparent;
 }
+
 .navLink:hover {
+  background: linear-gradient(var(--black), var(--black)) padding-box,
+    var(--linearYellow) border-box;
   border-radius: 4px;
-  border: 0.5px solid var(--yellow);
 }
 
 @media (min-width: 1024px) {
@@ -64,13 +67,6 @@
     line-height: 21px;
     padding: 18px 34px 19px 35px;
     cursor: pointer;
-  }
-
-  .navLink.active {
-    background: linear-gradient(var(--black), var(--black)) padding-box,
-      var(--linearYellow) border-box;
-    border-radius: 4px;
-    border: 1px solid transparent;
   }
 }
 

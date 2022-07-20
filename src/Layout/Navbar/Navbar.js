@@ -45,7 +45,7 @@ const Navbar = () => {
               <a>About Us</a>
             </Link>
           </li>
-          <li className={`${styles.navLink} ${styles.active}`}>
+          <li className={styles.navLink}>
             <Link href={"/#contact"}>
               <a>Contact</a>
             </Link>
