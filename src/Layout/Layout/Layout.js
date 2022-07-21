@@ -19,11 +19,11 @@ const Layout = ({ children }) => {
 
     setPageTitle(title.join("-"));
   }, [router.asPath]);
-  console.log(pageTitle);
+
   return (
     <>
       <Head>
-        <title>eSportcave {pageTitle ? `| ${pageTitle}` : ""}</title>
+        <title>{`eSportcave ${pageTitle ? `| ${pageTitle}` : ""}`}</title>
       </Head>
 
       <Navbar />

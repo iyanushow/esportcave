@@ -38,12 +38,17 @@
   .accordionContainer {
     margin: 40px auto;
     max-width: 656px;
+
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 318px);
   }
 }
 
 @media (min-width: 1140px) {
   .accordionContainer {
     margin: 26px auto 40px;
+    grid-template-columns: repeat(2, 580px);
 
     max-width: 1180px;
   }
@@ -63,6 +68,7 @@
   .accordionContainer {
     margin: 32px auto 40px;
     max-width: 1380px;
+    grid-template-columns: repeat(2, 680px);
   }
 
   .container h2 {

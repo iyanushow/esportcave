@@ -9,7 +9,7 @@ class MyDocument extends Document {
 
           {/* Fonts */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link
             href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&display=swap"
             rel="stylesheet"
@@ -26,7 +26,6 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff"></meta>
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="description" content="Esportcave Gaming App" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
 
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Esportcave Gaming" />

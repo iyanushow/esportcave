@@ -113,15 +113,18 @@ p {
   font-weight: 300;
 }
 
+@media (max-width: 768px) {
+  .faq-row {
+    max-width: 500px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: 768px) {
   .pageContainer {
     padding: 40px 44px;
-  }
-
-  .faq-body {
-    column-gap: 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 318px);
   }
 
   .faq-body .faq-row {
@@ -139,19 +142,10 @@ p {
   .faq-body .faq-row {
     width: 580px;
   }
-  .faq-body {
-    display: grid;
-    grid-template-columns: repeat(2, 580px);
-  }
 }
 
 @media (min-width: 1920px) {
   .faq-body .faq-row {
     width: 680px;
-  }
-
-  .faq-body {
-    display: grid;
-    grid-template-columns: repeat(2, 680px);
   }
 }
