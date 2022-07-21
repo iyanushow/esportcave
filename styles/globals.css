@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&display=swap");
-
 :root {
   --white: #fff;
   --grey: #a9a9a9;
@@ -74,20 +72,71 @@ p {
 }
 
 .pageContainer {
-  padding: 40px 16px 40px 17px;
+  padding: 40px 15px;
 
   max-width: 1920px;
   margin: 0 auto;
 }
 
+.faq-row-wrapper .faq-row {
+  border: 1px solid #333333;
+  border-color: #333333 !important;
+  border-radius: 4px;
+  padding: 0 !important;
+}
+
+.faq-row-wrapper .faq-row:not(:nth-of-type(4n)) {
+  margin-bottom: 16px;
+}
+
+.faq-row-wrapper .faq-row .row-title {
+  padding: 12px 0 11px 12px !important;
+  align-items: center;
+}
+.faq-row-wrapper .faq-row .row-title .row-title-text {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+.faq-row-wrapper .faq-row .row-content-text {
+  padding: 0 12px 11px 12px !important;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
 @media (min-width: 768px) {
   .pageContainer {
-    padding: 40px 44px 40px 44px;
+    padding: 40px 44px;
+  }
+
+  .faq-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 215px;
+    column-gap: 20px;
+  }
+
+  .faq-body .faq-row {
+    width: 318px;
   }
 }
 
 @media (min-width: 1024px) {
   .pageContainer {
-    padding: 90px 130px 90px 130px;
+    padding: 90px 130px;
+  }
+}
+@media (min-width: 1440px) {
+  .faq-body .faq-row {
+    width: 580px;
+  }
+}
+@media (min-width: 1920px) {
+  .faq-body .faq-row {
+    width: 680px;
   }
 }

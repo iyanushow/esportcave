@@ -2,6 +2,7 @@
   background-image: url("/images/bgPattern.png");
   width: 100%;
   height: calc(100vh - 55px);
+  max-height: 700px;
   padding: 38px 19px 38px 15px;
 
   display: flex;
@@ -103,7 +104,8 @@
 @media (min-width: 768px) {
   .hero {
     padding: 54px 5.729vw 73px;
-    min-height: calc(100vh - 82px);
+    height: calc(100vh - 82px);
+    max-height: 440px;
   }
   .heroContainer {
     gap: 26px;
@@ -159,7 +161,8 @@
   .hero {
     padding: 72px 5.5vw;
     display: block;
-    min-height: calc(100vh - 91px);
+    height: calc(100vh - 91px);
+    max-height: 550px;
   }
   .heroContainer {
     padding: 64px 0 58px;
@@ -187,7 +190,9 @@
 @media (min-width: 1440px) {
   .hero {
     padding: 20px 7.5vw;
-    min-height: calc(100vh - 109px);
+    height: calc(100vh - 109px);
+
+    max-height: 650px;
   }
 
   .mainImage {
@@ -205,7 +210,8 @@
 
 @media (min-width: 1920px) {
   .hero {
-    min-height: calc(100vh - 125px);
+    height: calc(100vh - 125px);
+    max-height: 866px;
     padding: 72px 130px 72px 130px;
   }
 
