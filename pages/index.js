@@ -18,9 +18,8 @@ export default function Home() {
     <>
       <Hero />
       <div className="pageContainer">
-        <Earn />
-        <Games games={games} />
         <Contact />
+        <Games games={games} />
         <Faq />
       </div>
     </>

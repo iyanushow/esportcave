@@ -8,15 +8,14 @@ const Footer = () => {
   return (
     <footer className={styles.container}>
       <div className={styles.footer}>
-        <Logo className={styles.logo} />
+        <Logo className={styles.logo} showLogoText={true} />
 
         <div className={styles.footerContent}>
           <div className={styles.footerLinks}>
-            <h2>About ESPORTSAVE</h2>
+            <h2>About ESPORTCAVE</h2>
             <ul>
               <li>About Us</li>
               <li>Contact Us</li>
-              <li>Groups</li>
               <li>Game For Good</li>
             </ul>
           </div>
@@ -24,10 +23,8 @@ const Footer = () => {
           <div className={styles.footerLinks}>
             <h2>Business & Organizer Services</h2>
             <ul>
-              <li>Corporate ESPORT Tournement</li>
               <li>Advertising Inquiries</li>
               <li>Blog</li>
-              <li>Corporate ESPORT Tournement</li>
             </ul>
           </div>
 

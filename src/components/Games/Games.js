@@ -8,7 +8,7 @@ const Games = ({ games }) => {
     <section className={styles.gamesSection}>
       <div className={styles.heading}>
         <h2>Our Games</h2>
-        <p>Join the Salam Gamer League Tournaments and win amazing prizes</p>
+        <p>Play your favorite games for a chance to win real cash</p>
       </div>
 
       <div className={styles.gameContainer}>

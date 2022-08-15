@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "./contact.module.css";
 
 const Contact = () => {
-  const [number, setNumber] = useState("+234");
+  const [number, setNumber] = useState("");
 
   const submitForm = e => {
     e.stopPropagation();
@@ -18,9 +18,12 @@ const Contact = () => {
           <h3>Get App Link Through SMS.</h3>
 
           <form className={styles.form} onSubmit={submitForm}>
-            <label>Enter Your Mobile Number</label>
             <div className={styles.inputBox}>
-              <input placeholder="+234" value={number} onChange={e => setNumber(e.target.value)} />
+              <input
+                placeholder="Enter Your Mobile Number"
+                value={number}
+                onChange={e => setNumber(e.target.value)}
+              />
               <button type="submit" className={styles.playBtn}>
                 Send App Link
               </button>

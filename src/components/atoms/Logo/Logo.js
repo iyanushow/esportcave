@@ -5,7 +5,7 @@ import React from "react";
 //styles
 import styles from "./logo.module.css";
 
-const Logo = ({ className }) => {
+const Logo = ({ className, showLogoText = false }) => {
   return (
     <Link href="/">
       <a className={`${styles.logo} ${className}`}>
@@ -18,7 +18,7 @@ const Logo = ({ className }) => {
             height={87}
           />
         </figure>
-        <p className={styles.logoText}>Play..Earn..Socialize</p>
+        {showLogoText && <p className={styles.logoText}>Play..Earn..Socialize</p>}
       </a>
     </Link>
   );
