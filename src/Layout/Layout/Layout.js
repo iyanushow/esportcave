@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>{`eSportcave ${pageTitle ? `| ${pageTitle}` : ""}`}</title>
+        <title>eSportcave - Play, Earn, Socialize</title>
       </Head>
 
       <Navbar />

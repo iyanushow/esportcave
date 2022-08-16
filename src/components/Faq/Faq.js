@@ -49,7 +49,7 @@ const Faq = () => {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h2>Frequently Ask Questions</h2>
+        <h2>Frequently Asked Questions</h2>
 
         <div className={styles.accordionContainer}>
           <Accordion items={accordOne} className={styles.accordion} />

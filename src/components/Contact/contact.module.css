@@ -2,6 +2,21 @@
   width: 100%;
   margin: 40px 0 40px 0;
 }
+.inputBox {
+  position: relative;
+}
+
+.select {
+  position: absolute;
+  height: 38px;
+  width: 50px;
+  font-size: 12px;
+  top: 1px;
+  background: #d7d7d7;
+  border: 1px solid transparent;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
 
 .container {
   background: linear-gradient(var(--primaryBg), var(--primaryBg)) padding-box,
@@ -37,17 +52,19 @@
 
 .form input {
   width: 100%;
-  padding: 13px 12px;
+  padding: 10px 12px;
   border: 1px solid #333333;
   background: transparent;
   border-radius: 4px;
-  margin: 12px auto 18px;
+  margin: 0 auto 18px;
 
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
 
-  color: #c7c7c7;
+  color: black;
+  padding-left: 52px;
+  border-left: 1px solid rgb(85, 85, 85);
 }
 
 .playBtn {
@@ -66,6 +83,7 @@
   /* identical to box height */
 
   color: #fd556f;
+  height: 40px;
 }
 
 .playBtn:hover {
@@ -147,6 +165,7 @@
 
   .inputBox input {
     background: #d7d7d7;
+    height: 40px;
   }
 
   .imageBox {
@@ -155,12 +174,11 @@
 
   .inputBox input {
     width: 280px;
-    margin: 10px 0 0;
+    margin: 0;
   }
   .playBtn {
     width: 140px;
-    margin-top: 10px;
-    padding: 14px 0px;
+    padding: 10px 0px;
     min-width: 118px;
   }
 }

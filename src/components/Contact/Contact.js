@@ -4,25 +4,34 @@ import { useState } from "react";
 import styles from "./contact.module.css";
 
 const Contact = () => {
-  const [number, setNumber] = useState("");
+  const [contactDetails, setContact] = useState({ code: "+234", number: "" });
 
   const submitForm = e => {
-    e.stopPropagation();
-    console.log(number);
+    e.preventDefault();
+    console.log(contactDetails);
   };
 
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h3>Get App Link Through SMS.</h3>
+          <h3>Request App Link.</h3>
 
           <form className={styles.form} onSubmit={submitForm}>
             <div className={styles.inputBox}>
+              <select
+                value={contactDetails.code}
+                onChange={e => setContact({ ...contactDetails, code: e.target.value })}
+                className={styles.select}
+              >
+                <option value={+234}>+234</option>
+                <option value={+233}>+233</option>
+              </select>
               <input
+                type="tel"
                 placeholder="Enter Your Mobile Number"
-                value={number}
-                onChange={e => setNumber(e.target.value)}
+                value={contactDetails.number}
+                onChange={e => setContact({ ...contactDetails, number: e.target.value })}
               />
               <button type="submit" className={styles.playBtn}>
                 Send App Link
