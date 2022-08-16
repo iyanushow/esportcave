@@ -1,5 +1,6 @@
-import { faFacebook, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faTwitter, faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 import React from "react";
 import Logo from "../../components/atoms/Logo/Logo";
 import styles from "./footer.module.css";
@@ -41,9 +42,26 @@ const Footer = () => {
           <h3>Powered By</h3>
           <p>Copyright © 2022 ESPORTCAVE. All Rights Reserved.</p>
           <div className={styles.socials}>
-            <FontAwesomeIcon icon={faFacebook} />
-            <FontAwesomeIcon icon={faInstagram} />
-            <FontAwesomeIcon icon={faTwitter} />
+            <Link href="https://www.facebook.com/esportcaveNG">
+              <a target="_blank">
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+            </Link>
+            <Link href="https://www.instagram.com/esportcave/">
+              <a target="_blank">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+            </Link>
+            <Link href="https://twitter.com/esportcave">
+              <a target="_blank">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+            </Link>
+            <Link href="https://www.tiktok.com/@esportcave">
+              <a target="_blank">
+                <FontAwesomeIcon icon={faTiktok} />
+              </a>
+            </Link>
           </div>
         </div>
       </div>

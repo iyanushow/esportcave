@@ -15,9 +15,9 @@ const Hero = () => {
             <h2>How About a Game of WHOT?</h2>
 
             <p>
-              A social game of engaging & thrilling battles including 1 on 1 and Tournament
-              adventures, with players from around the world in real-time. Stand a chance to win
-              real cash prizes playing games you love!
+              A skill-based social gaming app of engaging & thrilling battles including 1 on 1 and
+              Tournament adventures, with players from around the world in real-time. Stand a chance
+              to win real cash prizes playing games you love.
             </p>
             <div className={styles.stores}>
               <Link className="" href="/">
