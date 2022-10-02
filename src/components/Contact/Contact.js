@@ -1,13 +1,13 @@
 import dynamic from "next/dynamic";
 import React from "react";
-import useWindowSize from "../../utils/useWindowsize";
+import useResize from "../../utils/useResize";
 import styles from "./contact.module.css";
 
 const DesktopContact = dynamic(() => import("./components/DesktopContact"));
 const MobileContact = dynamic(() => import("./components/MobileContact"));
 
 const Contact = () => {
-  const size = useWindowSize();
+  const size = useResize();
 
   const isMobile = size < 450;
 
