@@ -1,53 +1,21 @@
-import Image from "next/image";
+import dynamic from "next/dynamic";
 import React from "react";
-import { useState } from "react";
+import useWindowSize from "../../utils/useWindowsize";
 import styles from "./contact.module.css";
 
-const Contact = () => {
-  const [contactDetails, setContact] = useState({ code: "+234", number: "" });
+const DesktopContact = dynamic(() => import("./components/DesktopContact"));
+const MobileContact = dynamic(() => import("./components/MobileContact"));
 
-  const submitForm = e => {
-    e.preventDefault();
-    console.log(contactDetails);
-  };
+const Contact = () => {
+  const size = useWindowSize();
+
+  const isMobile = size < 450;
 
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.content}>
-          <h3>Request App Link.</h3>
-
-          <form className={styles.form} onSubmit={submitForm}>
-            <div className={styles.inputBox}>
-              <select
-                value={contactDetails.code}
-                onChange={e => setContact({ ...contactDetails, code: e.target.value })}
-                className={styles.select}
-              >
-                <option value={+234}>+234</option>
-                <option value={+233}>+233</option>
-              </select>
-              <input
-                type="tel"
-                placeholder="Enter Your Mobile Number"
-                value={contactDetails.number}
-                onChange={e => setContact({ ...contactDetails, number: e.target.value })}
-              />
-              <button type="submit" className={styles.playBtn}>
-                Send App Link
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <div className={styles.imageBox}>
-          <div className={styles.imgContainer}>
-            <figure className={styles.image}>
-              <Image src="/images/qr-code.png" alt="phones" width={133} height={126} />
-            </figure>
-          </div>
-          <p>OR Scan QR Code</p>
-        </div>
+        {isMobile && <MobileContact />}
+        {!isMobile && <DesktopContact />}
       </div>
     </section>
   );

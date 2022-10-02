@@ -218,3 +218,49 @@
     max-width: 174px;
   }
 }
+
+/* 
+  Mobile section styles
+
+*/
+
+.mobile h3 {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.mobileContainer {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  color: #333333;
+}
+
+.mobileBtn {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.mobileBtn svg {
+  width: 20px;
+  height: 20px;
+}
+.mobilePlay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mobilePlay span:first-child {
+  font-size: 6px;
+  font-weight: 600;
+}
+
+.mobilePlay span:last-child {
+  font-weight: 500;
+}
