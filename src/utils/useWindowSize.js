@@ -3,7 +3,7 @@ import { useEffect, useLayoutEffect, useState } from "react";
 const useIsomorphicLayoutEffect =
   typeof window !== "undefined" ? useLayoutEffect : useEffect;
 
-export default function useWindowSize() {
+function useWindowSize() {
   const [size, setSize] = useState(0);
 
   useIsomorphicLayoutEffect(() => {
@@ -18,3 +18,5 @@ export default function useWindowSize() {
   }, []);
   return size;
 }
+
+export default useWindowSize;
