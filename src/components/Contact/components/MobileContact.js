@@ -13,8 +13,8 @@ const MobileContact = () => {
           <button className={styles.mobileBtn}>
             <FontAwesomeIcon
               icon={faGooglePlay}
-              width={20}
-              height={20}
+              width={24}
+              height={24}
               color="black"
             />
             <div className={styles.mobilePlay}>
@@ -27,11 +27,11 @@ const MobileContact = () => {
           <button className={styles.mobileBtn}>
             <FontAwesomeIcon
               icon={faApple}
-              width={20}
-              height={20}
+              width={24}
+              height={24}
               color="black"
             />
-            <div>Coming Soon</div>
+            <div className={styles.mobileApple}>Coming Soon</div>
           </button>
         </Link>
       </div>
