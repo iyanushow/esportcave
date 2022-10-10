@@ -60,11 +60,29 @@
 }
 
 .cardTitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+}
+
+.cardTitle h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
-  margin: 24px 0;
+  flex-grow: 1;
+}
+
+.cardTitle a {
+  font-size: 12px;
+  font-weight: 200;
+  text-transform: capitalize;
+  color: var(--yellow);
+}
+
+.cardTitle a:hover {
+  transform: scale(1.02);
+  text-decoration: underline;
 }
 
 .cardBtn {
