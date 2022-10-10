@@ -23,7 +23,7 @@ const MobileContact = () => {
             </div>
           </button>
         </Link>
-        <Link href="https://google.com">
+        <Link href="#">
           <button className={styles.mobileBtn}>
             <FontAwesomeIcon
               icon={faApple}
