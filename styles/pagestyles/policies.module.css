@@ -1,0 +1,94 @@
+.policies {
+  padding: 32px 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.policies h1 {
+  font-size: clamp(2rem, 1.5714rem + 2.1429vw, 3.5rem);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 4px auto 24px;
+}
+
+.policies h2 {
+  font-size: clamp(1.25rem, 1.0357rem + 1.0714vw, 2rem);
+  margin: 10px auto;
+  text-align: left;
+  display: flex;
+}
+
+.policies section p,
+.policies section div,
+.policies p,
+.policies div {
+  padding: 8px 0;
+}
+
+.policies * {
+  font-size: clamp(0.875rem, 0.8036rem + 0.3571vw, 1.125rem);
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.policies ol {
+  list-style: auto;
+  list-style-position: inside;
+  padding-left: 16px;
+}
+
+.policies ul {
+  padding-left: 16px;
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.policies ul ol,
+.policies ol ol {
+  list-style-type: lower-alpha;
+}
+
+.policies ul ol ol,
+.policies ul ul ol,
+.policies ol ol ol,
+.policies ol ul ol {
+  list-style-type: lower-roman;
+}
+
+.policies li::marker {
+  margin-right: 8px;
+}
+
+.policies ul li,
+.policies ol li {
+  padding: 5px 0;
+}
+
+.terms li > h3,
+.terms li > h4 {
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .policies {
+    padding: 40px;
+  }
+
+  .policies h1 {
+    margin: 12px auto 32px;
+  }
+  .policies h2 {
+    margin: 14px auto;
+  }
+
+  .policies section > p,
+  .policies section div {
+    padding: 12px 0;
+  }
+
+  .policies ul li,
+  .policies ol li {
+    padding: 8px 0;
+  }
+}

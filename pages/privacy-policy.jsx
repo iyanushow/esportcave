@@ -1,10 +1,12 @@
 import React from "react";
+import Layout from "../src/Layout/Layout/Layout";
+import S from "../styles/pagestyles/policies.module.css";
 
 const Privacy = () => {
   return (
-    <main>
+    <div className={S.policies}>
       <h1>privacy policy</h1>
-      <section id="intro">
+      <section className="intro">
         <h2>Introduction</h2>
         <p>
           Esportcave Limited <i>(“Esportcave”, “we”, “us”, “our” “Company”)</i>,
@@ -23,41 +25,43 @@ const Privacy = () => {
           and process your Personal Data and describes your rights as a user of
           any of our services and Platforms.
         </p>
-        <p>
+        <div>
           This Policy applies to all our Platforms, and all related sites,
           applications, services and tools regardless of how they are accessed
           or used. In this Privacy Policy, “we”, “us” or “our” refers to
           Esportcave Limited and its successors, agents and assigns, while
           “you”, “your” refers to you and/or any person who subscribes for, uses
           or authorizes the use of the Service.
-        </p>
-        <p>
-          Our Privacy Policy explains our user’s privacy rights regarding:
+        </div>
+        <div>
+          <div>
+            Our Privacy Policy explains our user’s privacy rights regarding:
+          </div>
           <ol>
             <li>What Personal Data we collect</li>
             <li>Why we collect such Personal Data</li>
             <li>The use of such Personal Data</li>
             <li>The storage, sharing and protection of such Personal Data</li>
           </ol>
-        </p>
+        </div>
       </section>
 
-      <section id="consent">
+      <section className="consent">
         <h2>Consent</h2>
-        <p>
+        <div>
           As a user of any of our Platforms, you accept this Privacy Policy when
           you sign up for, or use our products, services, content, technologies
           or functions offered on our Platforms and all related sites and
           services (“Services”).
-        </p>
+        </div>
       </section>
 
-      <section id="terms">
+      <section className="terms">
         <h2>Definition of Terms</h2>
 
         <h3>For the purpose of this Policy:</h3>
         <div>
-          <p>
+          <div>
             <strong>Personal Data:</strong> means any information relating to
             you, including your name, identification number, location data,
             online identifier address, photo, email address, pins, passwords,
@@ -69,8 +73,8 @@ const Privacy = () => {
             others. It also includes factors specific to your physical,
             physiological, genetic, mental, economic, cultural or social
             identity.
-          </p>
-          <p>
+          </div>
+          <div>
             <strong>Process/Processing:</strong> means any operation or set of
             operations which is performed on your Personal Data or sets of
             Personal Data, whether or not by automated means, such as
@@ -78,16 +82,16 @@ const Privacy = () => {
             adaptation or alteration, retrieval, consultation, use, disclosure
             by transmission, dissemination or otherwise making available,
             alignment or combination, restriction, erasure or destruction.
-          </p>
-          <p>
+          </div>
+          <div>
             <strong>Consent:</strong> We kindly request that you carefully read
             this Policy and click on the ‘Agree’ icon below, if you consent to
             the terms of this Policy, particularly concerning processing your
             Personal Data. That notwithstanding, if you proceed to use any of
             our Platforms and services, it will be deemed that you have provided
             your express consent to the terms of this Policy..
-          </p>
-          <p>
+          </div>
+          <div>
             <strong>Age:</strong> You must be at least 18 years old to use our
             services or any of our Platforms. Individuals under the age of 18,
             or the applicable age of maturity, may utilize our Platforms
@@ -95,11 +99,11 @@ const Privacy = () => {
             under such person’s account. Regardless, all Personal Data which we
             may process shall be in accordance with this Policy and other
             applicable laws..
-          </p>
+          </div>
         </div>
       </section>
 
-      <section id="data-collection">
+      <section className={S.dataCollection}>
         <h2>COLLECTION OF PERSONAL DATA</h2>
         <div>
           In the course of your engagement with us or with third parties through
@@ -155,20 +159,20 @@ const Privacy = () => {
           </ul>
         </div>
       </section>
-      <section id="data-access">
+      <section className="data-access">
         <h2>ACCESSING YOUR PERSONAL DATA</h2>
         <div>
-          <p>
+          <div>
             When accessing our Platforms, we may collect Personal Data about you
             and your interactions with the Services to which we undertake to
             keep secure and confidential.
-          </p>
-          <p>
+          </div>
+          <div>
             When accessing our Platforms, we may collect Personal Data about you
             and your interactions with the Services to which we undertake to
             keep secure and confidential.
-          </p>
-          <p>
+          </div>
+          <div>
             When you download or use our mobile applications or access one of
             our mobile optimized sites, we may receive Personal Data about your
             location and your mobile device, including a unique identifier for
@@ -179,19 +183,19 @@ const Privacy = () => {
             you have questions about how to disable your device’s location
             services, we recommend you contact your mobile service carrier or
             the manufacturer of your particular device.
-          </p>
+          </div>
         </div>
       </section>
-      <section id="using-data">
+      <section className="using-data">
         <h2>USING YOUR PERSONAL DATA</h2>
         <div>
-          <p>
+          <div>
             In the course of your engagements with us or through our Platforms,
             we collect Personal Data for various legal reasons, largely to
             enable us to personalize your experience and to provide a more
             efficient service to you. Some of the reasons we collect Personal
             Data are to:
-          </p>
+          </div>
           <ul>
             <li>provide services and customer support;</li>{" "}
             <li>
@@ -228,43 +232,46 @@ const Privacy = () => {
               {" "}
               send you offers and promotions for our services and investment
               opportunities{" "}
-              <li>
-                {" "}
-                resolve disputes, process payments and troubleshoot problems
-              </li>{" "}
-              <li>
-                {" "}
-                detect, investigate and prevent activities that may violate our
-                policies or be illegal
-              </li>{" "}
-              <li>
-                {" "}
-                manage risks, or to detect, prevent, and/or remediate fraud,
-                violation of policies and applicable user agreements or other
-                potentially prohibited or illegal activities
-              </li>{" "}
-              <li> execute our contractual obligations to you</li>{" "}
-              <li>
-                {" "}
-                improve our services and functionality by customizing user
-                experience
-              </li>{" "}
-              <li>
-                measure the performance of our services and improve their
-                content and layout
-              </li>{" "}
-              <li>
-                {" "}
-                manage and protect our information technology infrastructure
-              </li>{" "}
-              <li>
-                {" "}
-                provide targeted marketing and advertising, provide service or
-                transaction update notices, and deliver promotional offers based
-                on communication preferences
-              </li>{" "}
-              <li> obtain a means by which we may contact you</li> either by
-              telephone, text (SMS), email messaging, social media, etc
+            </li>
+            <li>
+              {" "}
+              resolve disputes, process payments and troubleshoot problems
+            </li>{" "}
+            <li>
+              {" "}
+              detect, investigate and prevent activities that may violate our
+              policies or be illegal
+            </li>{" "}
+            <li>
+              {" "}
+              manage risks, or to detect, prevent, and/or remediate fraud,
+              violation of policies and applicable user agreements or other
+              potentially prohibited or illegal activities
+            </li>{" "}
+            <li> execute our contractual obligations to you</li>{" "}
+            <li>
+              {" "}
+              improve our services and functionality by customizing user
+              experience
+            </li>{" "}
+            <li>
+              measure the performance of our services and improve their content
+              and layout
+            </li>{" "}
+            <li>
+              {" "}
+              manage and protect our information technology infrastructure
+            </li>{" "}
+            <li>
+              {" "}
+              provide targeted marketing and advertising, provide service or
+              transaction update notices, and deliver promotional offers based
+              on communication preferences
+            </li>{" "}
+            <li>
+              {" "}
+              obtain a means by which we may contact you either by telephone,
+              text (SMS), email messaging, social media, etc
             </li>{" "}
             <li>
               {" "}
@@ -294,23 +301,23 @@ const Privacy = () => {
               time to time
             </li>
           </ul>
-          <p>
+          <div>
             If we intend to use any Personal Data in any manner that is not
             consistent with this Privacy Policy, you will be informed of such
             anticipated use prior to or at the time at which the Personal Data
             is required and obtain your consent.
-          </p>
+          </div>
         </div>
       </section>
 
-      <section id="laws">
+      <section className="laws">
         <h2>LAWFUL BASIS FOR PROCESSING</h2>
         <div>
-          <p>
+          <div>
             We can only use your Personal Data if we have a lawful basis for
             doing so. We consider that the lawful basis for processing your
             Personal Data are as follows:
-          </p>
+          </div>
           <ul>
             <li>To comply with our legal and regulatory obligations</li>
             <li>
@@ -336,10 +343,10 @@ const Privacy = () => {
         </div>
       </section>
 
-      <section id="storage">
+      <section className="storage">
         <h2>STORAGE AND PROTECTION OF YOUR PERSONAL DATA</h2>
         <div>
-          <p>
+          <div>
             We protect your Personal Data using physical, technical, and
             administrative security measures to reduce the risks of loss,
             misuse, unauthorized access, unauthorised disclosure and alteration.
@@ -351,16 +358,16 @@ const Privacy = () => {
             locations and cloud infrastructure (where applicable). Please be
             aware that, despite our best efforts, no security measures are
             perfect or impenetrable.
-          </p>
-          <p>
+          </div>
+          <div>
             We will retain your Personal Data for the length of time needed to
             fulfil the purposes outlined in this privacy policy unless a longer
             retention period is required or permitted by law. To dispose of
             Personal Data, we may anonymize it, delete it or take other
             appropriate steps. Personal Data may persist in copies made for
             backup and business continuity purposes for additional time.
-          </p>
-          <p>
+          </div>
+          <div>
             We will take all necessary measures to ensure that your Personal
             Data is safe, however, you are also required to ensure that access
             codes, PINs, passwords, usernames, and all other information or
@@ -373,13 +380,13 @@ const Privacy = () => {
             as such, we advise that you use third-party devices with extreme
             caution. If you believe that an unauthorized person has accessed
             your information, please contact us immediately.
-          </p>
+          </div>
         </div>
       </section>
-      <section id="processing">
+      <section className="processing">
         <h2>PROCESSING YOUR PERSONAL DATA</h2>
         <div>
-          <p>
+          <div>
             In order to execute our obligations to you or process your
             transactions, we may be required to process your Personal Data, such
             as your name, account number, account ID, contact details, shipping
@@ -396,8 +403,8 @@ const Privacy = () => {
             other third parties pursuant to a subpoena, court order, or other
             legal process or requirement applicable to Esportcave. Please note
             that the aforementioned parties may be within or outside Nigeria.
-          </p>
-          <p>
+          </div>
+          <div>
             We may also process your Personal Data when we believe, in our sole
             discretion, that the disclosure of your Personal Data is necessary
             to comply with applicable laws and judicial/regulatory orders;
@@ -405,22 +412,22 @@ const Privacy = () => {
             fraud, crime or financial loss, or for public safety or to report
             suspected illegal activity or to investigate violations of our Terms
             and Conditions.
-          </p>
-          <p>
+          </div>
+          <div>
             In all cases, we will ensure that your Personal Data is safe, and
             notify the receiving party of the confidential nature of your
             Personal Data, particularly the need to maintain the confidentiality
             of same and prevent unlawful or unauthorised usage.
-          </p>
+          </div>
         </div>
       </section>
-      <section id="right-subject">
+      <section className="right-subject">
         <h2>YOUR RIGHTS AS A DATA SUBJECT</h2>
         <div>
-          <p>
+          <div>
             You have the following rights regarding your Personal Data collected
             by us:
-          </p>
+          </div>
           <ul>
             <li>
               Right to access your Personal Data being held by us. Request for
@@ -460,10 +467,10 @@ const Privacy = () => {
         </div>
       </section>
 
-      <section id="disclosure">
+      <section className={S.disclosure}>
         <h2>DISCLOSURES OF PERSONAL DATA</h2>
         <div>
-          <p>We may share your Personal Data with:</p>
+          <div>We may share your Personal Data with:</div>
           <ol>
             <li>
               Members of Esportcave to provide joint content, products and
@@ -499,7 +506,9 @@ const Privacy = () => {
             </li>
           </ol>
 
-          <p>Other unaffiliated third parties, for the following purposes:</p>
+          <div>
+            Other unaffiliated third parties, for the following purposes:
+          </div>
 
           <ol>
             <li>
@@ -526,9 +535,9 @@ const Privacy = () => {
         </div>
       </section>
 
-      <section id="cross-border">
+      <section className="cross-border">
         <h2>CROSS-BORDER TRANSFERS OF PERSONAL INFORMATION</h2>
-        <p>
+        <div>
           We operate globally, and in a bid to serve you better, we may transfer
           your Personal Data to third parties in locations around the world for
           the purposes described in this Privacy Policy. That notwithstanding,
@@ -536,39 +545,39 @@ const Privacy = () => {
           regardless of where the Data is transferred or hosted. Please be rest
           assured that all our affiliates are bound by the same level of strict
           confidentiality with respect to your Personal Data.
-        </p>
+        </div>
       </section>
 
-      <section id="software">
+      <section className="software">
         <h2>SOFTWARE</h2>
-        <p>
+        <div>
           If you download or use our software, such as a stand-alone software
           product, an app, or a browser plugin, you agree that from time to
           time, the software may download and install upgrades, updates and
           additional features from us in order to improve, enhance, and further
           develop the software. We may utilise your Personal Data to internally
           evaluate our software.
-        </p>
+        </div>
       </section>
-      <section id="storage-period">
+      <section className="storage-period">
         <h2>PERIOD OF STORAGE</h2>
-        <p>
+        <div>
           We retain your Personal Data for as long as necessary for the
           purpose(s) for which it was collected. The period of data storage is
           also subject to legal, regulatory, administrative and operational
           requirements.
-        </p>
+        </div>
       </section>
-      <section id="exceptions">
+      <section className="exceptions">
         <h2>Exceptions</h2>
-        <p>
+        <div>
           Please note that this Policy does not apply to Information that is
           already in the public domain through no fault of ours.
-        </p>
+        </div>
       </section>
-      <section id="data-breach">
+      <section className="data-breach">
         <h2>DATA BREACH / VIOLATION</h2>
-        <p>
+        <div>
           In the event of a breach of security leading to the accidental or
           unlawful destruction, loss, alteration, unauthorized disclosure of, or
           access to Personal Data, we reserve the right to restrict your access
@@ -579,11 +588,11 @@ const Privacy = () => {
           take steps to inform you of the breach incident, the risk to your
           rights and freedoms resulting from such breach and any course of
           action to remedy said breach.
-        </p>
+        </div>
       </section>
-      <section id="resolution">
+      <section className="resolution">
         <h2>DISPUTE RESOLUTION</h2>
-        <p>
+        <div>
           We are dedicated to ensuring that you are satisfied with our
           management of your Personal Data. However, in the unlikely event that
           you have a complaint, please contact us via the details below, stating
@@ -595,43 +604,46 @@ const Privacy = () => {
           However, if parties fail to resolve the disputes amicably by such
           mutual consultations, parties shall further attempt to resolve the
           dispute by mediation.
-        </p>
+        </div>
       </section>
-      <section id="contact">
+      <section className="contact">
         <h2>CONTACT US</h2>
-        <p>
+        <div>
           If you have questions regarding your data privacy rights or would like
           to submit a related data privacy right request, kindly contact us via
           the information below:
-        </p>
-        <ul>
-          <li>Esportcave Limited</li>
-          <li>Address: </li>
-
-          <li>
-            Email: <a></a>
-          </li>
-          <li>Phone Number </li>
-        </ul>
-        <p>
+        </div>
+        <div>
+          <p>Esportcave Limited</p>
+          <ul>
+            <li>Address: </li>
+            <li>Email:</li>
+            <li>Phone Number </li>
+          </ul>
+        </div>
+        <div>
           Please allow up to 1 (One) month for requests to be processed. The
           Company reserves the right to charge a reasonable fee to process
           excessive or repeated requests.
-        </p>
+        </div>
       </section>
-      <section id="amendment">
+      <section className="amendment">
         <h2>AMENDMENT</h2>
-        <p>
+        <div>
           We may amend or revise this Policy at any time by posting a revised
           version on our website. Notice of the amendment shall be posted on our
           website and the revised version will be effective from the date of
           publication. Kindly, note that your continued use of our Platform
           after the publication of the revised version constitutes your
           acceptance of our amended terms of the Policy.
-        </p>
+        </div>
       </section>
-    </main>
+    </div>
   );
+};
+
+Privacy.getLayout = function getLayout(page) {
+  return <Layout header>{page}</Layout>;
 };
 
 export default Privacy;

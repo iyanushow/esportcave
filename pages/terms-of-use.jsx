@@ -1,17 +1,20 @@
 import React from "react";
+import Layout from "../src/Layout/Layout/Layout";
+import S from "../styles/pagestyles/policies.module.css";
 
 const TermsOfUse = () => {
   return (
-    <main>
+    <main className={S.policies}>
       <h1>terms of use</h1>
 
       <p>
         Welcome to Esportcave (the “Platform”), an impact-driven platform that
-        [*]. This Platform is brought to you by Esportcave Limited
+        [*].
+        <br /> This Platform is brought to you by Esportcave Limited
         (“Esportcave”, “we”, “us”, or “our”).
       </p>
 
-      <div>
+      <section className={S.terms}>
         <h2>
           PLEASE READ THE TERMS CAREFULLY BEFORE ACCESSING OR USING THE
           SERVICES.
@@ -145,7 +148,7 @@ const TermsOfUse = () => {
 
                 <li>
                   <h4>Restrictions on use of the Platform</h4>
-                  <p>
+                  <div>
                     Please note that the contents of this Platform are solely
                     for your information and personal use, as intended through
                     the provided functionality of the Services and permitted
@@ -237,7 +240,7 @@ const TermsOfUse = () => {
                         third party outside of the Platform.
                       </li>
                     </ol>
-                  </p>
+                  </div>
                 </li>
                 <li>
                   <h4>Disclaimer</h4>
@@ -414,7 +417,7 @@ const TermsOfUse = () => {
           </li>
           <li>
             <h3>UNDERTAKINGS</h3>
-            <p>
+            <div>
               You hereby agree as follows:
               <ol>
                 <li>
@@ -469,7 +472,7 @@ const TermsOfUse = () => {
                   hacking, password mining or any other unlawful means;
                 </li>
               </ol>
-            </p>
+            </div>
           </li>
           <li>
             <h3>INTELLECTUAL PROPERTY</h3>
@@ -820,9 +823,13 @@ const TermsOfUse = () => {
             </p>
           </li>
         </ol>
-      </div>
+      </section>
     </main>
   );
+};
+
+TermsOfUse.getLayout = function getLayout(page) {
+  return <Layout header>{page}</Layout>;
 };
 
 export default TermsOfUse;

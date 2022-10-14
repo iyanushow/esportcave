@@ -4,6 +4,7 @@ import Hero from "../src/components/Hero/Hero";
 import Contact from "../src/components/Contact/Contact";
 import Faq from "../src/components/Faq/Faq";
 import { games } from "../src/utils/data";
+import Layout from "../src/Layout/Layout/Layout";
 
 // export const getStaticProps = () => {
 //   return {
@@ -13,7 +14,6 @@ import { games } from "../src/utils/data";
 //   };
 // };
 
-games;
 export default function Home() {
   return (
     <>
@@ -26,3 +26,11 @@ export default function Home() {
     </>
   );
 }
+
+Home.getLayout = function getLayout(page) {
+  return (
+    <Layout header footer>
+      {page}
+    </Layout>
+  );
+};
