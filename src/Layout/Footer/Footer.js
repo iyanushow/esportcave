@@ -1,4 +1,9 @@
-import { faFacebook, faInstagram, faTwitter, faTiktok } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faTwitter,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import React from "react";
@@ -32,8 +37,16 @@ const Footer = () => {
           <div className={styles.footerLinks}>
             <h2>Legal</h2>
             <ul>
-              <li>Terms of Services</li>
-              <li>Privacy Policy</li>
+              <li>
+                <Link href="/terms-of-use">
+                  <a target="_blank">Terms of Services</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="privacy-policy">
+                  <a target="_blank">Privacy Policy</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

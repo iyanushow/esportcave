@@ -7,7 +7,7 @@ import styles from "./layout.module.css";
 import { useRouter } from "next/router";
 import Head from "next/head";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, header, footer }) => {
   const router = useRouter();
 
   const [pageTitle, setPageTitle] = useState("");
@@ -26,9 +26,9 @@ const Layout = ({ children }) => {
         <title>eSportcave - Play, Earn, Socialize</title>
       </Head>
 
-      <Navbar />
+      {header && <Navbar />}
       <main className={styles.layout}>{children}</main>
-      <Footer />
+      {footer && <Footer />}
     </>
   );
 };
