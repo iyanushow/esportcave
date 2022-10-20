@@ -9,7 +9,7 @@ const MobileContact = () => {
       <h3>Download Now</h3>
 
       <div className={styles.mobileContainer}>
-        <Link href="https://google.com">
+        <a target="blank" href="https://app.esportcave.com/live/eSportcave.apk">
           <button className={styles.mobileBtn}>
             <FontAwesomeIcon
               icon={faGooglePlay}
@@ -22,7 +22,7 @@ const MobileContact = () => {
               <span>Google Play</span>
             </div>
           </button>
-        </Link>
+        </a>
         <Link href="#">
           <button className={styles.mobileBtn}>
             <FontAwesomeIcon

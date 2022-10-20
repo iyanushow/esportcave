@@ -43,16 +43,16 @@ const DesktopContact = () => {
 
       <div className={styles.imageBox}>
         <div className={styles.imgContainer}>
-          <figure className={styles.image}>
+          {/* <figure className={styles.image}>
             <Image
               src="/images/qr-code.png"
               alt="phones"
               width={133}
               height={126}
             />
-          </figure>
+          </figure> */}
         </div>
-        <p>OR Scan QR Code</p>
+        {/* <p>OR Scan QR Code</p> */}
       </div>
     </>
   );
