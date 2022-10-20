@@ -9,19 +9,19 @@ const MobileContact = () => {
       <h3>Download Now</h3>
 
       <div className={styles.mobileContainer}>
-        <a href="https://app.esportcave.com/live/eSportcave.apk">
-          <button className={styles.mobileBtn}>
-            <FontAwesomeIcon
-              icon={faGooglePlay}
-              width={24}
-              height={24}
-              color="black"
-            />
-            <div className={styles.mobilePlay}>
-              <span>GET IT ON</span>
-              <span>Google Play</span>
-            </div>
-          </button>
+        <a
+          href="https://app.esportcave.com/live/eSportcave.apk"
+          className={styles.mobileBtn}>
+          <FontAwesomeIcon
+            icon={faGooglePlay}
+            width={24}
+            height={24}
+            color="black"
+          />
+          <div className={styles.mobilePlay}>
+            <span>GET IT ON</span>
+            <span>Google Play</span>
+          </div>
         </a>
         <Link href="#">
           <button className={styles.mobileBtn}>
