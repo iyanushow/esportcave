@@ -21,7 +21,7 @@ const GameCard = ({ src, title, href, live }) => {
       </figure>
       <div className={styles.cardTitle}>
         <h1>{title}</h1>
-        <Link href="/">How to play?</Link>
+        <Link href="/how-to-play">How to play?</Link>
       </div>
       <button className={styles.cardBtn}>Play Game</button>
     </div>
