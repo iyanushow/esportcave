@@ -24,7 +24,6 @@ const GameCard = ({ src, title, href, live }) => {
         <Link href="/how-to-play">How to play?</Link>
       </div>
       <a
-        target="blank"
         href="https://app.esportcave.com/live/eSportcave.apk"
         className={styles.cardBtn}>
         Play Game
