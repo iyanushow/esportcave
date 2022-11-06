@@ -19,6 +19,17 @@
   display: flex;
 }
 
+.policies h3 {
+  margin: 10px auto;
+  display: inline;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.promos div {
+  padding-left: 16px !important;
+}
+
 .policies section p,
 .policies section div,
 .policies p,

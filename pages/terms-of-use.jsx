@@ -829,7 +829,11 @@ const TermsOfUse = () => {
 };
 
 TermsOfUse.getLayout = function getLayout(page) {
-  return <Layout header>{page}</Layout>;
+  return (
+    <Layout header footer>
+      {page}
+    </Layout>
+  );
 };
 
 export default TermsOfUse;
