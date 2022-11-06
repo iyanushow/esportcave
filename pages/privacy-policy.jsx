@@ -616,9 +616,11 @@ const Privacy = () => {
         <div>
           <p>Esportcave Limited</p>
           <ul>
-            <li>Address: </li>
-            <li>Email:</li>
-            <li>Phone Number </li>
+            <li className={S.links}>
+              Email:{" "}
+              <a href="mailto:support@esportcave.com">support@esportcave.com</a>
+            </li>
+            <li>Telephone: (+234) 903-985-7531</li>
           </ul>
         </div>
         <div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import Layout from "../src/Layout/Layout/Layout";
 import S from "../styles/pagestyles/policies.module.css";
@@ -814,13 +815,30 @@ const TermsOfUse = () => {
               </li>
             </ol>
           </li>
+          <li className={S.promotions}>
+            <h3>Promotions</h3>
+
+            <div>
+              Read more:{" "}
+              <Link href="/promotions">www.esportcave.com/promotions</Link>
+            </div>
+          </li>
           <li>
             <h3>NOTICE/CONTACT DETAILS</h3>
-            <p>
+            <div>
               In the case of any complaints or notice of dispute or any other
               notification, please contact us at: Esportcave Limited Address:
-              [*] Email: [*] Telephone: [*]
-            </p>
+              [*]
+              <ul>
+                <li className={S.links}>
+                  Email:{" "}
+                  <a href="mailto:support@esportcave.com">
+                    support@esportcave.com
+                  </a>
+                </li>
+                <li>Telephone: (+234) 903-985-7531</li>
+              </ul>{" "}
+            </div>
           </li>
         </ol>
       </section>
