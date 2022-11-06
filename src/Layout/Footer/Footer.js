@@ -47,6 +47,11 @@ const Footer = () => {
                   <a target="_blank">Privacy Policy</a>
                 </Link>
               </li>
+              <li>
+                <Link href="promotions">
+                  <a target="_blank">Promotions</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
