@@ -10,7 +10,7 @@ const MobileContact = () => {
 
       <div className={styles.mobileContainer}>
         <a
-          href="https://app.esportcave.com/live/eSportcave.apk"
+          href="https://play.google.com/store/apps/details?id=com.esportcave.game"
           className={styles.mobileBtn}>
           <FontAwesomeIcon
             icon={faGooglePlay}

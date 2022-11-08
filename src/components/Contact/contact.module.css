@@ -281,3 +281,16 @@
   line-height: 12px;
   text-transform: uppercase;
 }
+
+@media (min-width: 450px) {
+  .mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mobileContainer {
+    margin-top: 0;
+  }
+}
