@@ -60,22 +60,22 @@ const Footer = () => {
           <h3>Powered By</h3>
           <p>Copyright © 2022 ESPORTCAVE. All Rights Reserved.</p>
           <div className={styles.socials}>
-            <Link href="https://www.facebook.com/esportcaveNG">
+            <Link href="https://www.facebook.com/esportcaveNG" passHref>
               <a target="_blank">
                 <FontAwesomeIcon icon={faFacebook} name="Facebook" />
               </a>
             </Link>
-            <Link href="https://www.instagram.com/esportcave/">
+            <Link href="https://www.instagram.com/esportcave/" passHref>
               <a target="_blank">
                 <FontAwesomeIcon icon={faInstagram} name="Instagram" />
               </a>
             </Link>
-            <Link href="https://twitter.com/esportcave">
+            <Link href="https://twitter.com/esportcave" passHref>
               <a target="_blank">
                 <FontAwesomeIcon icon={faTwitter} name="Twitter" />
               </a>
             </Link>
-            <Link href="https://www.tiktok.com/@esportcave">
+            <Link href="https://www.tiktok.com/@esportcave" passHref>
               <a target="_blank">
                 <FontAwesomeIcon icon={faTiktok} name="Tiktok" />
               </a>
