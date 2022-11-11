@@ -62,22 +62,22 @@ const Footer = () => {
           <div className={styles.socials}>
             <Link href="https://www.facebook.com/esportcaveNG">
               <a target="_blank">
-                <FontAwesomeIcon icon={faFacebook} />
+                <FontAwesomeIcon icon={faFacebook} name="Facebook" />
               </a>
             </Link>
             <Link href="https://www.instagram.com/esportcave/">
               <a target="_blank">
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon icon={faInstagram} name="Instagram" />
               </a>
             </Link>
             <Link href="https://twitter.com/esportcave">
               <a target="_blank">
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faTwitter} name="Twitter" />
               </a>
             </Link>
             <Link href="https://www.tiktok.com/@esportcave">
               <a target="_blank">
-                <FontAwesomeIcon icon={faTiktok} />
+                <FontAwesomeIcon icon={faTiktok} name="Tiktok" />
               </a>
             </Link>
           </div>

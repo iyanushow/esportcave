@@ -1,9 +1,10 @@
 import React from "react";
 import GameCard from "../atoms/GameCard/GameCard";
+import { games } from "../../utils/data";
 
 import styles from "./games.module.css";
 
-const Games = ({ games }) => {
+const Games = () => {
   return (
     <section className={styles.gamesSection}>
       <div className={styles.heading}>

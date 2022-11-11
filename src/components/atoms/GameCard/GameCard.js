@@ -4,12 +4,9 @@ import React from "react";
 import styles from "./gamecard.module.css";
 
 const GameCard = ({ src, title, href, live }) => {
-  const customStyle = live ? {} : { backgroundImage: `url(${src})` };
-
   return (
     <div
-      className={`${styles.gameCard} ${live ? styles.live : styles.notLive}`}
-      style={customStyle}>
+      className={`${styles.gameCard} ${live ? styles.live : styles.notLive}`}>
       {!live && (
         <div
           className={`${live ? styles.overlay_live : styles.overlay_notLive}`}>

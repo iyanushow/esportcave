@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 import styles from "./hero.module.css";
@@ -29,6 +28,7 @@ const Hero = () => {
             alt="whot-cards"
             width={684.8}
             height={717.68}
+            priority
           />
         </figure>
       </div>
@@ -37,32 +37,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-{
-  /* <div className={styles.stores}>
-  <Link className="" href="/">
-    <a target="_blank">
-      <figure className={styles.storesImg}>
-        <Image
-          src="/images/AppStore-Image.jpeg"
-          alt="app-store"
-          width={174}
-          height={50}
-        />
-      </figure>
-    </a>
-  </Link>
-  <Link className="" href="/">
-    <a target="_blank">
-      <figure className={styles.storesImg}>
-        <Image
-          src="/images/G-play-image.jpeg"
-          alt="google-play-store"
-          width={174}
-          height={50}
-        />
-      </figure>
-    </a>
-  </Link>
-</div>; */
-}

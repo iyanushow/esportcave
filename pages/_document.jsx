@@ -21,11 +21,6 @@ class MyDocument extends Document {
           />
 
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-            rel="stylesheet"
-          />
-
-          <link
             rel="apple-touch-icon"
             sizes="180x180"
             href="/icons/apple-touch-icon.png"
@@ -54,6 +49,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff"></meta>
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="description" content="Esportcave Gaming App" />
+          <meta name="keywords" content="Esportcave, gaming, whot, sport" />
 
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Esportcave Gaming" />
@@ -66,6 +62,12 @@ class MyDocument extends Document {
           <meta property="twitter:domain" content="https://esportcave.com/" />
           <meta property="twitter:url" content="https://esportcave.com/" />
           <meta name="twitter:description" content="Esportcave Gaming App" />
+
+          <meta name="facebook:title" content="Esportcave Gaming" />
+          <meta name="facebook:card" content="summary_large_image" />
+          <meta property="facebook:domain" content="https://esportcave.com/" />
+          <meta property="facebook:url" content="https://esportcave.com/" />
+          <meta name="facebook:description" content="Esportcave Gaming App" />
         </Head>
         <body>
           <Main />
