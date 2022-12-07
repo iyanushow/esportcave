@@ -3,7 +3,17 @@ import Link from "next/link";
 import React from "react";
 import styles from "./gamecard.module.css";
 
-const GameCard = ({ src, title, href, live }) => {
+const GameCard = ({ src, title, live }) => {
+  function scrollToGames() {
+    const element = document.getElementById(`get-app`);
+    if (element instanceof HTMLElement) {
+      const elementPosition = element.offsetTop - 120;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    }
+  }
   return (
     <div
       className={`${styles.gameCard} ${live ? styles.live : styles.notLive}`}>
@@ -20,11 +30,9 @@ const GameCard = ({ src, title, href, live }) => {
         <h1>{title}</h1>
         <Link href="/how-to-play">How to play?</Link>
       </div>
-      <a
-        href="https://app.esportcave.com/live/eSportcave.apk"
-        className={styles.cardBtn}>
+      <button className={styles.cardBtn} onClick={scrollToGames}>
         Play Game
-      </a>
+      </button>
     </div>
   );
 };

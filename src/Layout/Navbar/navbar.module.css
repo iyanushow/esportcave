@@ -1,6 +1,9 @@
 .container {
   background-color: var(--black);
   padding: 7px 12px 7.38px 15px;
+  position: sticky;
+  top: 0;
+  z-index: 40;
 }
 
 @media (min-width: 321px) {
@@ -30,9 +33,6 @@
 
 .sticky {
   border-bottom: 1px solid var(--yellow);
-  position: sticky;
-  top: 0;
-  z-index: 40;
 }
 
 .navList {
